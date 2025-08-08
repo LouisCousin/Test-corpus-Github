@@ -1,0 +1,39 @@
+
+styles:
+  font_family: "Aptos"
+  body_font_size: 11
+  h1_font_size: 14
+  h2_font_size: 12
+  margins_cm:
+    top: 2.54
+    bottom: 2.54
+    left: 2.54
+    right: 2.54
+min_relevance_score: 7
+max_citations_per_section: 30
+include_secondary_matches: true
+confidence_threshold: 60
+
+# Chemins par défaut (laisser vide pour ignorer). Sur Windows utilisez soit des doubles antislashs \\ soit des /.
+default_paths:
+  plan_docx: 'data/input/20250518 HTL.docx'
+  excel_corpus: 'data/input/plan_Analyse_HITL - Copie_ANALYZED.xlsx'
+  keywords_json: 'data/input/keywords_mapping.json'
+  env_dir: 'data/input'
+
+# Répertoire d'export pour les fichiers générés
+export_dir: "output"
+
+# Paramètres pour le brouillon (IA 1)
+draft_params:
+  temperature: 0.9
+  top_p: 0.95
+  max_input_tokens: 4000
+  max_output_tokens: 800
+
+# Paramètres pour la version finale (IA 2)
+final_params:
+  temperature: 0.7
+  top_p: 0.9
+  max_input_tokens: 8000
+  max_output_tokens: 1600

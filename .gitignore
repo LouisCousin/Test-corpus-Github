@@ -1,0 +1,17 @@
+
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+env/
+venv/
+.streamlit/secrets.toml
+data/input/*
+!data/input/.keep
+data/output/*
+!data/output/.keep
+cache/*
+logs/*
+output/*
